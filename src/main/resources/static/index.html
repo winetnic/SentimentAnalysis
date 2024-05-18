@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeepLearningJava Sentiment Analysis Prediction</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js" async></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container-custom {
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: white;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .custom-input {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .blue-title {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container-custom">
+            <h1 class="blue-title">Sentiment Analysis Prediction</h1>
+            <p>DeepLearningJava Demonstration by winetnic</p>
+
+            <div class="form-group">
+                <label for="textInput">Bitte Text eingeben und Enter drücken</label>
+                <input type="text" class="form-control custom-input" id="textInput" onkeyup="getSentiment(event, this.value);">
+            </div>
+
+            <div id="answerPart" style="visibility: hidden;">
+                <p><b>Answer:</b></p>
+                <div id="answer"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
